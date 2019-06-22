@@ -5,9 +5,9 @@ class TelegramLinkPreview extends PreviewLink {
     return this.render(url, (dynamic body) {
       return TelegramView(
         imageUrl: body['image_url'],
-        title: body['sitename'],
+        title: body['title'],
         url: body['url'],
-        description: body['title'],
+        description: body['description'],
       );
     });
   }

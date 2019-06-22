@@ -7,7 +7,6 @@ class SkypeLinkPreview extends PreviewLink {
         imageUrl: body['image_url'],
         title: body['title'],
         url: body['url'],
-        favUrl: body['favicon'],
         description: body['description'],
       );
     });

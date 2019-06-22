@@ -2,6 +2,7 @@ library link_preview;
 
 import 'dart:async';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -21,10 +22,14 @@ part 'src/widget/skype/view.dart';
 part 'src/widget/linkedin/index.dart';
 part 'src/widget/linkedin/view.dart';
 
+// Fetch meta data
+Future<Map<String, dynamic>> fetchData(String url) async {
+  return (await MetadataProvider().fetchMetadata(url)).toJson();
+}
 
 class LinkPreview {
-  Future<dynamic> getUrlMetaData({@required String url}) async {
-    MetadataProvider provider = MetadataProvider();
-    return (await provider.fetchMetadata(url)).toJson();
+  Future<Map<String, dynamic>> getUrlMetaData({@required String url}) async {
+    // Run in new thread
+    return await compute(fetchData, url);
   }
 }
