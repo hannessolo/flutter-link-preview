@@ -53,22 +53,22 @@ class _MyAppState extends State<MyApp> {
               Container(
                   margin: EdgeInsets.symmetric(vertical: 4.0),
                   child: wspPreview.build('https://whatsapp.com')),
-              Container(
-                  margin: EdgeInsets.symmetric(vertical: 4.0),
-                child: WhatsAppLinkPreview().build('https://flutter.io')
-              ),
-              Container(
-                  margin: EdgeInsets.symmetric(vertical: 4.0),
-                  child: tPreview.build('https://telegram.org')),
-              Container(
-                  margin: EdgeInsets.symmetric(vertical: 4.0),
-                  child: skPreview.build('https://skype.com')),
-              Container(
-                  margin: EdgeInsets.symmetric(vertical: 4.0),
-                  child: twPreview.build('https://twitter.com')),
-              Container(
-                  margin: EdgeInsets.symmetric(vertical: 4.0),
-                  child: liPreview.build('https://linkedin.com')),
+//              Container(
+//                  margin: EdgeInsets.symmetric(vertical: 4.0),
+//                child: WhatsAppLinkPreview().build('https://flutter.io')
+//              ),
+//              Container(
+//                  margin: EdgeInsets.symmetric(vertical: 4.0),
+//                  child: tPreview.build('https://telegram.org')),
+//              Container(
+//                  margin: EdgeInsets.symmetric(vertical: 4.0),
+//                  child: skPreview.build('https://skype.com')),
+//              Container(
+//                  margin: EdgeInsets.symmetric(vertical: 4.0),
+//                  child: twPreview.build('https://twitter.com')),
+//              Container(
+//                  margin: EdgeInsets.symmetric(vertical: 4.0),
+//                  child: liPreview.build('https://linkedin.com')),
               MaterialButton(
                 onPressed: () {
                   setState(() {
