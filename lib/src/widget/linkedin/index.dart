@@ -5,7 +5,7 @@ class LinkedInLinkPreview extends PreviewLink {
     return this.render(url, (dynamic body) {
       return LinkedInView(
         imageUrl: body['image_url'],
-        title: body['title'],
+        title: body['title'].toString().split(':')[0],
         url: body['url'],
         description: body['description'],
       );

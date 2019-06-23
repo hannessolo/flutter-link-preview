@@ -2,9 +2,9 @@ part of link_preview;
 
 class PreviewLink {
   AsyncMemoizer memoizer;
-  MetadataProvider provider;
+  MethodChannel channel;
   PreviewLink() {
-    provider = MetadataProvider();
+    this.channel = MethodChannel('plugins.flutter.io/link_preview');
     this.memoizer = AsyncMemoizer();
   }
 
@@ -21,7 +21,7 @@ class PreviewLink {
 
   getFuture(String name, dynamic params) {
     return this.memoizer.runOnce(() async {
-      return (await provider.fetchMetadata(params['url'])).toJson();
+      return await channel.invokeMethod(name, params);
     });
   }
 }
