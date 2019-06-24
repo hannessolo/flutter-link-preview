@@ -32,10 +32,10 @@ import SwiftSoup
   private func getLinkPreview(result: @escaping FlutterResult, url: URL) {
 
     var parsedString = [
-      "image_url": "https://blog.hanneshertach.com/media/view/lightsailfile.png",
-      "title": "Flutter",
-      "url": "flutter.dev",
-      "description": "A cool website"
+      "image_url": "",
+      "title": "",
+      "url": "",
+      "description": ""
     ]
 
     let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
