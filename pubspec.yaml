@@ -3,7 +3,7 @@ description: Flutter plugin Rich Link Preview, enabling Android and iOS
   customs component providers like WhatApp, Telegram, Skype, Twitter,
   LinkedIn.
 author: Denny Segura <dev.dennysegura@gmail.com>
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/devdennysegura/flutter-link-preview
 
 environment:
