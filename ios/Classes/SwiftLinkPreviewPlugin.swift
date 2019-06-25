@@ -4,7 +4,7 @@ import SwiftSoup
 
 public class SwiftLinkPreviewPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "link_preview", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "plugins.flutter.io/link_preview", binaryMessenger: registrar.messenger())
     let instance = SwiftLinkPreviewPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
