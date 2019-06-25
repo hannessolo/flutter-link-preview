@@ -18,7 +18,7 @@ public class SwiftLinkPreviewPlugin: NSObject, FlutterPlugin {
         return
       }
       let url = args["url"] as? String
-      self?.getLinkPreview(result: result, url: URL(string: url!)!)
+      self.getLinkPreview(result: result, url: URL(string: url!)!)
     } else {
       result(FlutterMethodNotImplemented)
     }
