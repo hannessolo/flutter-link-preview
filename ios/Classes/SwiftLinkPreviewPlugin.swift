@@ -74,5 +74,3 @@ private func getLinkPreview(result: @escaping FlutterResult, url: URL) {
   }
 
 }
-
-}
