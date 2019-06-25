@@ -62,13 +62,13 @@ import SwiftSoup
             default:
               continue
             }
-          } catch (Exception.Error(let type, let message)) {
+          } catch (Exception.Error( _, _)) {
             continue
           }
         }
 
         result(NSDictionary(dictionary: parsedString))
-      } catch Exception.Error(let type, let message) {
+      } catch Exception.Error(_, let message) {
         print(message)
       } catch {
         print("error")
